@@ -1,0 +1,28 @@
+{
+  "name": "belajar-nodejs-express",
+  "version": "1.0.0",
+  "description": "Belajar NodeJS Express",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Muhammad Sayyid Rafee Djamil",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.28.4",
+    "cookie-parser": "^1.4.7",
+    "express": "^5.1.0",
+    "express-fileupload": "^1.5.2",
+    "mustache-express": "^1.3.2",
+    "winston": "^3.18.3",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.28.5 ",
+    "@babel/preset-env": "^7.28.5",
+    "babel-jest": "^30.2.0",
+    "jest": "^30.2.0",
+    "supertest": "^7.1.4"
+  }
+}

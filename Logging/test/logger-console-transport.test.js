@@ -1,0 +1,30 @@
+import winston from "winston";
+
+test("create new logger with console transport", () => {
+    const logger = winston.createLogger({
+        transports: [
+            new winston.transports.Console({})
+        ]
+    });
+
+    logger.log({
+        level: "info",
+        message: "Hello World"
+    })
+})
+
+test("logging with level", () => {
+    const logger = winston.createLogger({
+        transports: [
+            new winston.transports.Console({})
+        ]
+    });
+
+    logger.log({level: "error", message: "Error Message"});
+    logger.log({level: "warn", message: "Warning Message"});
+    logger.log({level: "info", message: "Info Message"});
+    logger.log({level: "http", message: "HTTP Message"});
+    logger.log({level: "verbose", message: "Verbose Message"});
+    logger.log({level: "debug", message: "Debug Message"});
+    logger.log({level: "silly", message: "Silly Message"});
+})

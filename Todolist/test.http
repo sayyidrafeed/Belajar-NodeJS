@@ -1,0 +1,26 @@
+GET http://localhost:3000
+###
+POST http://localhost:3000
+Content-Type: application/json
+Accept: application/json
+
+{
+    "todo": "Tamatin naruto"
+}
+###
+PUT http://localhost:3000
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 1,
+  "todo": "string"
+}
+###
+DELETE http://localhost:3000
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 3
+}
